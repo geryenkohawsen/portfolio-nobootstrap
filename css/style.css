@@ -230,7 +230,7 @@ section {
 
 /* services section style */
 .services {
-    font-family: 'Poppings', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #111;
     color: #fff;
 }
@@ -311,6 +311,135 @@ section {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+/* skilss section style */
+.skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skills .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+.skills .title::after {
+    content: "what i learn";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--primary);
+    padding: 5px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 25px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background-color: var(--primary);
+}
+
+.skills .skills-content .right .skill1::before {
+    width: 100%;
+}
+
+.skills .skills-content .right .skill2::before {
+    width: 85%;
+}
+
+.skills .skills-content .right .skill3::before {
+    width: 80%;
+}
+
+.skills .skills-content .right .skill4::before {
+    width: 65%;
+}
+
+.skills .skills-content .right .skill5::before {
+    width: 60%;
 }
 
 
@@ -413,11 +542,16 @@ section {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 767px){
     .max-width {
-        padding: 0 23px;
+        padding: 0 30px;
     }
 
     .home .home-content .text-2 {
