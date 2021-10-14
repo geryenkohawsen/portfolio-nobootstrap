@@ -483,15 +483,6 @@ section {
     transform: translateX(-50%);
 }
 
-
-/* not needed yet */
-/* .teams .teams-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 .teams .carousel .card {
     background-color: #222;
     border-radius: 6px;
