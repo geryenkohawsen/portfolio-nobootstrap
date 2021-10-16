@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -698,6 +702,24 @@ section {
     color: var(--primary);
     background-color: transparent;
 }
+
+/* footer style */
+footer {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
 
 
 
