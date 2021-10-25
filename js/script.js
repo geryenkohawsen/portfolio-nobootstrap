@@ -12,6 +12,15 @@ $(document).ready(function(){
         }
     });
 
+    // navbar-collapse
+    $('.menu-btn').on('click', function () {
+        $('.menu').addClass('active');
+    });
+      
+    $( '.menu a' ).on("click", function(){
+        $('.menu').removeClass('active');
+    });
+
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -30,12 +39,6 @@ $(document).ready(function(){
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    });
-
-    // toggle navbar menu script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
     });
 
     // owl-carousel script
@@ -59,4 +62,5 @@ $(document).ready(function(){
             }
         }
     });
+
 })
